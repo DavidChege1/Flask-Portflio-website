@@ -30,7 +30,7 @@ A personal portfolio website built with **Flask** and **Bootstrap** where I can 
 ![Login](static/screenshots/Login.png)
 
 ### Upload Page
-![Upload](static/screenshots/Upload.png)
+![Uploads](static/screenshots/Uploads.png)
 
 ---
 
