@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Upload a Project</h2>
+<form method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label class="form-label">Project Title</label>
+    <input type="text" class="form-control" name="title" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Description</label>
+    <textarea class="form-control" name="description" rows="3"></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Project Link (GitHub, Live site, etc.)</label>
+    <input type="url" class="form-control" name="link">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Upload Image</label>
+    <input type="file" class="form-control" name="image" required>
+  </div>
+  <button type="submit" class="btn btn-success">Upload</button>
+</form>
+{% endblock %}
