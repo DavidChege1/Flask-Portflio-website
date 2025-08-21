@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>My Projects</h2>
+<div class="row">
+  {% for p in projects %}
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="{{ url_for('static', filename='uploads/' + p.image) }}" class="card-img-top" alt="{{ p.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ p.title }}</h5>
+          <p class="card-text">{{ p.description }}</p>
+          <a href="{{ p.link }}" target="_blank" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <p>No projects yet. Upload one!</p>
+  {% endfor %}
+</div>
+{% endblock %}
