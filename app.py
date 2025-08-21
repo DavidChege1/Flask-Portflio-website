@@ -98,7 +98,7 @@ def login():
         password = request.form["password"]
 
         # Replace with your own username/password
-        if username == "admin" and password == "mypassword":
+        if username == "admin" and password == "password":
             session["logged_in"] = True
             return redirect(url_for("upload"))
         else:
