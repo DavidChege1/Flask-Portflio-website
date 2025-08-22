@@ -1,8 +1,27 @@
 {% extends "base.html" %}
+
 {% block content %}
   <div class="text-center">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" 
+         alt="Profile Picture" 
+         class="rounded-circle mb-3" 
+         style="width: 150px; height: 150px; object-fit: cover;">
+
     <h1>Hi, I'm David 👋</h1>
     <p class="lead">Data Scientist | Data Analyst</p>
     <p>Welcome to my portfolio website where I showcase my work and projects.</p>
+
+    <hr class="my-4">
+
+    <h3>📬 Contact Me</h3>
+    <p>Email me at : chegedavid1080@gmail.com</p>
+    <p>
+      <a href="https://www.linkedin.com/in/david-chege-990778338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn btn-outline-info btn-sm">
+        LinkedIn
+      </a>
+      <a href="https://github.com/DavidChege1" target="_blank" class="btn btn-outline-dark btn-sm">
+        GitHub
+      </a>
+    </p>
   </div>
 {% endblock %}
