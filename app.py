@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()  # loads .env at project root
 
 app = Flask(__name__)
-
+#
 # Security + uploads
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", os.urandom(24))
 app.config["UPLOAD_FOLDER"] = "static/uploads"
