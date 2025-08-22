@@ -15,7 +15,8 @@ A personal portfolio website built with **Flask** and **Bootstrap** where I can 
 ## 🚀 Tech Stack
 - **Backend:** Flask (Python)  
 - **Frontend:** Bootstrap 5, Jinja2 templates  
-- **Database:** SQLite (default, can swap with PostgreSQL/MySQL)  
+- **Database:** SQLite (default, can swap with PostgreSQL/MySQL) 
+- **Authentication:** Flask sessions + hashed password  
 
 ---
 
